@@ -53,11 +53,31 @@ void StartGame()
 	{kl7A,kl7C,kl7E,kl7G},{kl8B,kl8D,kl8F,kl8H}
 	};
 	
-	RenderWindow window(VideoMode(1920, 1080), "New RTY");
-	window.setFramerateLimit(60);
+RenderWindow window(VideoMode(1920, 1080), "New RTY");
+window.setFramerateLimit(60);
+	
+Texture glav;
+glav.loadFromFile("shashki2.png");
+Sprite screen;
+screen.setTexture(glav);
+screen.setPosition(22, 0);
+
+Text text_exit_menu;
+Font font;
+font.loadFromFile("NK123.ttf");
+text_exit_menu.setFont(font);
+text_exit_menu.setString("Exit");
+text_exit_menu.setFillColor(Color::White);
+text_exit_menu.setCharacterSize(30);
+text_exit_menu.setPosition(1845, 0);
+
+RectangleShape mini_exit(Vector2f(100.f, 40.f));
+mini_exit.setFillColor(Color::Red);
+mini_exit.setPosition(1820, 0);
+	
 	while (window.isOpen())
 		{
-		      while (window.pollEvent(event))
+		        while (window.pollEvent(event))
 			{
 				switch (event.type) 
 				{
@@ -66,7 +86,10 @@ void StartGame()
 		                          break;
 				}
 			}
-		        window.clear(Color::Black);
-			window.display();
+		window.clear(Color::Black);
+		window.draw(screen);
+		window.draw(mini_exit);
+		window.draw(text_exit_menu);
+		window.display();
 		}
 }
