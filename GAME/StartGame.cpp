@@ -52,4 +52,21 @@ void StartGame()
 	{kl3A,kl3C,kl3E,kl3G},{kl6B,kl6D,kl6F,kl6H},
 	{kl7A,kl7C,kl7E,kl7G},{kl8B,kl8D,kl8F,kl8H}
 	};
+	
+	RenderWindow window(VideoMode(1920, 1080), "New RTY");
+	window.setFramerateLimit(60);
+	while (window.isOpen())
+		{
+		      while (window.pollEvent(event))
+			{
+				switch (event.type) 
+				{
+	                             case Event::Closed:
+		                          window.close();
+		                          break;
+				}
+			}
+		        window.clear(Color::Black);
+			window.display();
+		}
 }
