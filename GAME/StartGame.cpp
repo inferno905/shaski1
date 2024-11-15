@@ -53,7 +53,7 @@ void StartGame()
 	{kl7A,kl7C,kl7E,kl7G},{kl8B,kl8D,kl8F,kl8H}
 	};
 	
-RenderWindow window(VideoMode(1920, 1080), "New RTY");
+RenderWindow window(VideoMode(1920, 1080), "New RTY", Style::Fullscreen);
 window.setFramerateLimit(60);
 	
 Texture glav;
