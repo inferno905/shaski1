@@ -77,13 +77,22 @@ mini_exit.setPosition(1820, 0);
 	
 	while (window.isOpen())
 		{
+		Event event;
 		        while (window.pollEvent(event))
 			{
 				switch (event.type) 
 				{
-	                             case Event::Closed:
-		                          window.close();
-		                          break;
+	                    case Event::Closed:
+		                     window.close();
+		                     break;
+						case Event::MouseButtonPressed:
+							Vector2i mousePos = Mouse::getPosition(window);
+							Vector2f mousePosF(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
+							if (mini_exit.getGlobalBounds().contains(mousePosF))
+							{
+								window.close();
+								break;
+							}
 				}
 			}
 		window.clear(Color::Black);
