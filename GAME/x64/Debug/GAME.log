@@ -1,2 +1,3 @@
 ﻿  StartGame.cpp
+main.obj : warning LNK4204: в "" отсутствуют отладочные данные для ссылок на модуль; компоновка объекта выполняется как при отсутствии отладочных данных
   GAME.vcxproj -> C:\Users\Ярычик\Documents\GitHub\dev\GAME\x64\Debug\GAME.exe

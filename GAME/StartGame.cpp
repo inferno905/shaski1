@@ -57,11 +57,14 @@ void StartGame()
 RenderWindow window(VideoMode(1920, 1080), "New RTY", Style::Fullscreen);
 window.setFramerateLimit(60);
 	
-Texture glav;
+Texture glav, pole;
 glav.loadFromFile("shashki2.png");
-Sprite screen;
+pole.loadFromFile("Pole1.jpg");
+Sprite screen, polyana;
 screen.setTexture(glav);
 screen.setPosition(22, 0);
+polyana.setTexture(pole);
+polyana.setPosition(419, 0);
 
 Text text_exit_menu, text_start, exit_main_menu;
 Font font;
@@ -140,6 +143,8 @@ bool start_game1 = false;
 		}
 		else
 		{
+			window.draw(polyana);
+
 			window.draw(mini_exit);
 			window.draw(text_exit_menu);
 		}
