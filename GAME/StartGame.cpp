@@ -66,6 +66,13 @@ screen.setPosition(22, 0);
 polyana.setTexture(pole);
 polyana.setPosition(419, 0);
 
+Texture negrov, texture_white;
+negrov.loadFromFile("Black1.png");
+texture_white.loadFromFile("White1.png");
+Sprite white_s, black_s;
+white_s.setTexture(texture_white);
+black_s.setTexture(negrov);
+
 Text text_exit_menu, text_start, exit_main_menu;
 Font font;
 font.loadFromFile("NK123.ttf");
@@ -144,6 +151,23 @@ bool start_game1 = false;
 		else
 		{
 			window.draw(polyana);
+
+			for (int i = 0; i < 8; i++)
+			{
+				for (int y = 0; y < 4; y++)
+				{
+					if (Occupied[i][y] == 1)
+					{
+						white_s.setPosition(Doska[i][y].first, Doska[i][y].second);
+						window.draw(white_s);
+					}
+					else if (Occupied[i][y] == 2)
+					{
+						black_s.setPosition(Doska[i][y].first, Doska[i][y].second);
+						window.draw(black_s);
+					}
+				}
+			}
 
 			window.draw(mini_exit);
 			window.draw(text_exit_menu);
