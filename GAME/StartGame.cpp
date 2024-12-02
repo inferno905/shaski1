@@ -63,7 +63,7 @@ Sprite screen;
 screen.setTexture(glav);
 screen.setPosition(22, 0);
 
-Text text_exit_menu;
+Text text_exit_menu, text_start, exit_main_menu;
 Font font;
 font.loadFromFile("NK123.ttf");
 text_exit_menu.setFont(font);
@@ -71,11 +71,28 @@ text_exit_menu.setString("Exit");
 text_exit_menu.setFillColor(Color::White);
 text_exit_menu.setCharacterSize(30);
 text_exit_menu.setPosition(1845, 0);
+text_start.setFont(font);
+text_start.setString("START GAME");
+text_start.setFillColor(Color::White);
+text_start.setCharacterSize(60);
+text_start.setPosition(115, 810);
+exit_main_menu.setFont(font);
+exit_main_menu.setString("EXIT");
+exit_main_menu.setFillColor(Color::White);
+exit_main_menu.setCharacterSize(60);
+exit_main_menu.setPosition(230, 960);
 
 RectangleShape mini_exit(Vector2f(100.f, 40.f));
 mini_exit.setFillColor(Color::Red);
 mini_exit.setPosition(1820, 0);
-	
+RectangleShape start(Vector2f(400.f, 100.f));
+start.setFillColor(Color::Blue);
+start.setPosition(100, 800);
+RectangleShape exit(Vector2f(400.f, 100.f));
+exit.setFillColor(Color::Red);
+exit.setPosition(100, 950);
+
+bool start_game1 = false;
 	while (window.isOpen())
 		{
 		Event event;
@@ -89,17 +106,44 @@ mini_exit.setPosition(1820, 0);
 						case Event::MouseButtonPressed:
 							Vector2i mousePos = Mouse::getPosition(window);
 							Vector2f mousePosF(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
-							if (mini_exit.getGlobalBounds().contains(mousePosF))
+							if (start_game1)
 							{
-								window.close();
-								break;
+								if (mini_exit.getGlobalBounds().contains(mousePosF))
+								{
+									window.close();
+									break;
+								}
+							}
+							else
+							{
+								if (start.getGlobalBounds().contains(mousePosF))
+								{
+									start_game1 = true;
+									break;
+								}
+								if (exit.getGlobalBounds().contains(mousePosF))
+								{
+									window.close();
+									break;
+								}
 							}
 				}
 			}
 		window.clear(Color::Black);
-		window.draw(screen);
-		window.draw(mini_exit);
-		window.draw(text_exit_menu);
+
+		if (!start_game1) {
+			window.draw(screen);
+			window.draw(start);
+			window.draw(text_start);
+			window.draw(exit);
+			window.draw(exit_main_menu);
+		}
+		else
+		{
+			window.draw(mini_exit);
+			window.draw(text_exit_menu);
+		}
+
 		window.display();
 		}
 }
