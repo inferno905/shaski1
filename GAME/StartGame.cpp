@@ -47,10 +47,11 @@ void StartGame()
 	{kl5A,kl5C,kl5E,kl5G},{kl6B,kl6D,kl6F,kl6H},
 	{kl7A,kl7C,kl7E,kl7G},{kl8B,kl8D,kl8F,kl8H}
 	};
-	pair<int, int> Occupied[6][4]  {
-	{kl1A,kl1C,kl1E,kl1G},{kl2B,kl2D,kl2F,kl2H},
-	{kl3A,kl3C,kl3E,kl3G},{kl6B,kl6D,kl6F,kl6H},
-	{kl7A,kl7C,kl7E,kl7G},{kl8B,kl8D,kl8F,kl8H}
+	int Occupied[8][4]{
+	{1,1,1,1},{1,1,1,1},
+	{1,1,1,1},{0,0,0,0},
+	{0,0,0,0},{2,2,2,2},
+	{2,2,2,2},{2,2,2,2}
 	};
 	
 RenderWindow window(VideoMode(1920, 1080), "New RTY", Style::Fullscreen);
