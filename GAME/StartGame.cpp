@@ -132,6 +132,7 @@ RectangleShape inmenu_exit(Vector2f(360.f, 70.f));
 inmenu_exit.setFillColor(Color::Red);
 inmenu_exit.setPosition(780, 745);
 
+bool start_menu = false;
 bool start_game1 = false;
 	while (window.isOpen())
 		{
@@ -143,6 +144,15 @@ bool start_game1 = false;
 	                    case Event::Closed:
 		                     window.close();
 		                     break;
+						case Event::KeyPressed:
+							if (event.key.scancode == Keyboard::Scan::Escape)
+							{
+								if (start_menu)
+									start_menu = false;
+								else
+									start_menu = true;
+							}
+							break;
 						case Event::MouseButtonPressed:
 							Vector2i mousePos = Mouse::getPosition(window);
 							Vector2f mousePosF(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
@@ -198,7 +208,15 @@ bool start_game1 = false;
 					}
 				}
 			}
-
+			if (start_menu) {
+				window.draw(menu);
+				window.draw(inmenu_go);
+				window.draw(inmenu_exit);
+				window.draw(inmenu_restart);
+				window.draw(text_inmenu_go);
+				window.draw(text_inmenu_restart);
+				window.draw(text_inmenu_exit);
+			}
 			window.draw(mini_exit);
 			window.draw(text_exit_menu);
 		}

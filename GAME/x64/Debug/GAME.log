@@ -1,22 +1,23 @@
 ﻿  StartGame.cpp
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,57): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,57): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,57): warning C4244:             _Ty2=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,57): warning C4244:         ]
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,38): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,38): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,38): warning C4244:             _Ty1=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(161,38): warning C4244:         ]
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,57): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,57): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,57): warning C4244:             _Ty2=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,57): warning C4244:         ]
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,38): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,38): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,38): warning C4244:             _Ty1=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(166,38): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,57): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,57): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,57): warning C4244:             _Ty2=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,57): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,38): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,38): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,38): warning C4244:             _Ty1=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(201,38): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,57): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,57): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,57): warning C4244:             _Ty2=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,57): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,38): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,38): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,38): warning C4244:             _Ty1=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(206,38): warning C4244:         ]
+main.obj : warning LNK4204: в "" отсутствуют отладочные данные для ссылок на модуль; компоновка объекта выполняется как при отсутствии отладочных данных
   GAME.vcxproj -> C:\Users\Ярычик\Documents\GitHub\dev\GAME\x64\Debug\GAME.exe
