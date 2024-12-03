@@ -158,6 +158,24 @@ bool start_game1 = false;
 							Vector2f mousePosF(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
 							if (start_game1)
 							{
+								if (start_menu)
+								{
+									if (inmenu_go.getGlobalBounds().contains(mousePosF))
+									{
+										start_menu = false;
+										break;
+									}
+									if (inmenu_restart.getGlobalBounds().contains(mousePosF))
+									{
+										break;
+									}
+									if (inmenu_exit.getGlobalBounds().contains(mousePosF))
+									{					
+										start_game1 = false;
+										start_menu = false;
+										break;
+									}
+								}
 								if (mini_exit.getGlobalBounds().contains(mousePosF))
 								{
 									window.close();
