@@ -73,7 +73,7 @@ Sprite white_s, black_s;
 white_s.setTexture(texture_white);
 black_s.setTexture(negrov);
 
-Text text_exit_menu, text_start, exit_main_menu;
+Text text_exit_menu, text_start, exit_main_menu, text_inmenu_go, text_inmenu_restart, text_inmenu_exit;
 Font font;
 font.loadFromFile("NK123.ttf");
 text_exit_menu.setFont(font);
@@ -91,6 +91,21 @@ exit_main_menu.setString("EXIT");
 exit_main_menu.setFillColor(Color::White);
 exit_main_menu.setCharacterSize(60);
 exit_main_menu.setPosition(230, 960);
+text_inmenu_go.setFont(font);
+text_inmenu_go.setString("Continue");
+text_inmenu_go.setFillColor(Color::Black);
+text_inmenu_go.setCharacterSize(50);
+text_inmenu_go.setPosition(860, 265);
+text_inmenu_restart.setFont(font);
+text_inmenu_restart.setString("Restart");
+text_inmenu_restart.setFillColor(Color::Black);
+text_inmenu_restart.setCharacterSize(50);
+text_inmenu_restart.setPosition(875, 355);
+text_inmenu_exit.setFont(font);
+text_inmenu_exit.setString("Exit");
+text_inmenu_exit.setFillColor(Color::Black);
+text_inmenu_exit.setCharacterSize(50);
+text_inmenu_exit.setPosition(920, 746);
 
 RectangleShape mini_exit(Vector2f(100.f, 40.f));
 mini_exit.setFillColor(Color::Red);
@@ -101,7 +116,23 @@ start.setPosition(100, 800);
 RectangleShape exit(Vector2f(400.f, 100.f));
 exit.setFillColor(Color::Red);
 exit.setPosition(100, 950);
+RectangleShape menu(Vector2f(400.f, 600.f));
+menu.setFillColor(Color{ 0x373737FF });
+menu.setPosition(760, 240);
 
+RectangleShape inmenu_go(Vector2f(360.f, 70.f));
+inmenu_go.setFillColor(Color::White);
+inmenu_go.setPosition(780, 265);
+
+RectangleShape inmenu_restart(Vector2f(360.f, 70.f));
+inmenu_restart.setFillColor(Color::White);
+inmenu_restart.setPosition(780, 355);
+
+RectangleShape inmenu_exit(Vector2f(360.f, 70.f));
+inmenu_exit.setFillColor(Color::Red);
+inmenu_exit.setPosition(780, 745);
+
+bool start_menu = false;
 bool start_game1 = false;
 	while (window.isOpen())
 		{
@@ -113,11 +144,38 @@ bool start_game1 = false;
 	                    case Event::Closed:
 		                     window.close();
 		                     break;
+						case Event::KeyPressed:
+							if (event.key.scancode == Keyboard::Scan::Escape)
+							{
+								if (start_menu)
+									start_menu = false;
+								else
+									start_menu = true;
+							}
+							break;
 						case Event::MouseButtonPressed:
 							Vector2i mousePos = Mouse::getPosition(window);
 							Vector2f mousePosF(static_cast<float>(mousePos.x), static_cast<float>(mousePos.y));
 							if (start_game1)
 							{
+								if (start_menu)
+								{
+									if (inmenu_go.getGlobalBounds().contains(mousePosF))
+									{
+										start_menu = false;
+										break;
+									}
+									if (inmenu_restart.getGlobalBounds().contains(mousePosF))
+									{
+										break;
+									}
+									if (inmenu_exit.getGlobalBounds().contains(mousePosF))
+									{					
+										start_game1 = false;
+										start_menu = false;
+										break;
+									}
+								}
 								if (mini_exit.getGlobalBounds().contains(mousePosF))
 								{
 									window.close();
@@ -168,7 +226,15 @@ bool start_game1 = false;
 					}
 				}
 			}
-
+			if (start_menu) {
+				window.draw(menu);
+				window.draw(inmenu_go);
+				window.draw(inmenu_exit);
+				window.draw(inmenu_restart);
+				window.draw(text_inmenu_go);
+				window.draw(text_inmenu_restart);
+				window.draw(text_inmenu_exit);
+			}
 			window.draw(mini_exit);
 			window.draw(text_exit_menu);
 		}
