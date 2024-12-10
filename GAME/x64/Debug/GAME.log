@@ -1,26 +1,22 @@
-﻿  main.cpp
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\main.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\main.cpp(3,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  StartGame.cpp
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,57): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,57): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,57): warning C4244:             _Ty2=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,57): warning C4244:         ]
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,38): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,38): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,38): warning C4244:             _Ty1=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(219,38): warning C4244:         ]
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,57): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,57): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,57): warning C4244:             _Ty2=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,57): warning C4244:         ]
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,38): warning C4244:         with
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,38): warning C4244:         [
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,38): warning C4244:             _Ty1=int
-C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(224,38): warning C4244:         ]
-  Создание кода...
+﻿  StartGame.cpp
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,57): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,57): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,57): warning C4244:             _Ty2=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,57): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,38): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,38): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,38): warning C4244:             _Ty1=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(272,38): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,57): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,57): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,57): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,57): warning C4244:             _Ty2=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,57): warning C4244:         ]
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,38): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,38): warning C4244:         with
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,38): warning C4244:         [
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,38): warning C4244:             _Ty1=int
+C:\Users\Ярычик\Documents\GitHub\dev\GAME\StartGame.cpp(277,38): warning C4244:         ]
   GAME.vcxproj -> C:\Users\Ярычик\Documents\GitHub\dev\GAME\x64\Debug\GAME.exe
